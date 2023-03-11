@@ -18,23 +18,43 @@ reader.question("What would you like to calculate?", function(input){
 	console.log(`number1`, num1)
 	console.log(`number2`, num2)
 
-	if(mathSymbol === "+"){
+	// if(mathSymbol === "+"){
+	// 	console.log(num1 + num2);
+	// }else if (mathSymbol === "-"){
+	// 	console.log(num1 - num2);
+	// }
+
+	// if (mathSymbol === "*"){
+	// 	console.log(num1 * num2);
+	// }
+
+	// if (mathSymbol === "/"){
+	// 	console.log(num1 / num2);
+	// }
+
+	// if (mathSymbol === "%"){
+	// 	console.log(num1 % num2);
+	// }
+
+switch (mathSymbol) {
+	case "+":
 		console.log(num1 + num2);
-	}else if (mathSymbol === "-"){
+		break;
+	case "-":
 		console.log(num1 - num2);
-	}
-
-	if (mathSymbol === "*"){
+		break;
+	case "*":
 		console.log(num1 * num2);
-	}
-
-	if (mathSymbol === "/"){
+		break;
+	case "/":
 		console.log(num1 / num2);
-	}
-
-	if (mathSymbol === "%"){
+		break;
+	case "%":
 		console.log(num1 % num2);
-	}
+		break;
+	default:
+		console.log("Put in a valid equation.");
+}
 
 
 	// This line closes the connection to the command line interface.
