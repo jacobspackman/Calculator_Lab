@@ -53,7 +53,7 @@ switch (mathSymbol) {
 		console.log(num1 % num2);
 		break;
 	default:
-		console.log("Put in a valid equation.");
+		console.log("Enter a valid equation.");
 }
 
 
